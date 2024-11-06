@@ -1,0 +1,186 @@
+.menu{
+    background-color: rgb(73, 4, 72);
+    color: white;
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    justify-content: space-between;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+.submenu{
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+    align-items: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.fundo img{
+    height:758px ;
+    width: 100%;
+}
+
+.data{
+    display: flex;
+    color:white;
+    font-size: 30px;
+    justify-content: center;
+}
+
+.mes{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+}
+
+button{
+    color: white;
+    background-color: rgb(169, 15, 169);
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.mensagem{
+    position: absolute;
+    margin-top: 380px;
+}
+
+.title{
+    font-size: 30px;
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+
+.fotos img{
+    display: flex;
+    width: 550px;
+    height: 300px;
+    border-radius: 20px
+}
+
+.fotos{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.fotos1{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.fotos1 img{
+    display: flex;
+    width: 550px;
+    height: 300px;
+    margin-top: 25px;
+    border-radius: 20px
+}
+
+.eventos{
+    margin-left: 30px;
+    margin-top: 120px;
+}
+
+.subtitle{
+    font-size: 25px;
+    display: flex;
+    color: black;
+    justify-content: center;
+}
+.menu a{
+    color: white;
+}
+
+.fundo{
+    background-image: url("um-jogo-de-video-colorido-e-mostrado-com-um-fundo-roxo-e-azul_1020200-11995.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width: 600px){
+    .menu{
+    background-color: rgb(73, 4, 72);
+    color: white;
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    }
+    .submenu{
+        display: flex;
+        gap: 5px;
+        font-size: 20px;
+        align-items: center;
+        margin-left: 90px;
+        color: white;
+    }
+    .mes{
+        display: flex;
+    margin-left: 0;
+    color: white;
+    margin-top: 65px;
+    font-size: 15px;
+    margin-left: 200px;
+    }
+    
+.timer{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+    .data{
+        display: flex;
+        color:white;
+        font-size: 20px;
+        justify-content: center;
+    }
+    .mes{
+        display: flex;
+        color:white;
+        font-size: 20px;
+
+    }
+    .fundo button{
+        color: white;
+    background-color: rgb(169, 15, 169);
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+    }
+    .fundo img{
+        display: flex;
+    width: 100%;
+    height: 300px;
+    }
+    .fotos{
+        flex-direction: column;
+    }
+    .fotos1{
+        flex-direction: column;
+        
+    }
+    
+}
+
+.sobre{
+    margin-top: 735px;
+    position: absolute;
+}

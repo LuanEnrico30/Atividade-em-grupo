@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LevelUp</title>
+    <link rel="stylesheet" href="VideoGame.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div class="logos">
+            <img src="./grupo-level-up-logo-597-removebg-preview (1).png" alt="Logo">
+        </div>
+
+        <div class="submenu">
+            <a href="#eventos" class="transicao">Eventos</a>
+            <a href="http://127.0.0.1:5500/sobre.html" target="_blank">Sobre Nós</a>
+            <a><u>Contato</u></a>
+        </div>
+    </div>
+    <div class="fundo">
+        <div class="datas">
+            <button>Inscreva-se</button> 
+            <div class="data">
+                <h1><strong>08 a 15</strong></h1>
+            </div>
+            <div class="mes">
+                <h1><strong>Novembro</strong></h1>
+            </div>    
+            <p id="mensagem"></p>
+        </div> 
+    </div>
+    <div id="eventos" class="evento">
+        <div class="title">
+            <h1>Eventos</h1>
+        </div>
+        <div class="subtitle">
+            <p>Alguns jogos que estarão dísponiveis para testar!!</p>
+        </div>
+        <div class="fotos">
+            <div class="foto">
+                <img src="https://arkade.com.br/wp-content/uploads/2024/05/ac-shadows.jpg" alt="AC Shadows">
+            </div>
+            <div class="foto">
+                <img src="https://i.ytimg.com/vi/vtvQHMHXn4g/maxresdefault.jpg" alt="DS">
+            </div>
+        </div>
+        <div class="fotos1">
+            <div class="foto">
+                <img src="https://i0.wp.com/viciados.net/wp-content/uploads/2023/12/GTA-6-Grand-Theft-Auto-VI-Lucia-Jason-Artwork-Oficial-Rockstar-Games-2025.webp?fit=1920%2C1080&ssl=1"
+                    alt="GTA">
+            </div>
+            <div class="foto">
+                <img src="https://www.ndgames.com.br/wp-content/uploads/2024/06/Mobile-capa-DoomDarkAges.png"
+                    alt="Doom">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="VideoGame.Js"></script>
+
+
+    <h1>Tempo Restante</h1>
+    <div id="timer"></div>
+    <script>
+        function updateTimer() {
+            const now = new Date();
+            const targetStart = new Date('2024-11-06T14:00:00');
+            const targetEnd = new Date('2024-11-06T17:00:00');
+            let timeLeft;
+            if (now < targetStart) {
+                timeLeft = targetStart - now;
+            } else if (now >= targetStart && now <= targetEnd) {
+                timeLeft = targetEnd - now;
+            } else {
+                document.getElementById('timer').innerHTML = "O temporizador acabou.";
+                return;
+            }
+            const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+            const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+            const seconds = Math.floor((timeLeft / 1000) % 60);
+            document.getElementById('timer').innerHTML = `Faltam: ${hours}h ${minutes}m ${seconds}s`;
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.sobre{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+}
+
+.foto1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px ;
+    border: 10px solid black;
+    background-color: rgb(71, 0, 151);
+    color: black;
+}
+
+.foto2 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 10px solid black;
+    background-color: rgb(71, 0, 151);
+    color: black;
+}
+
+.foto{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
